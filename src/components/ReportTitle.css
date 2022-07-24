@@ -1,0 +1,54 @@
+
+.reportTitles{
+    
+    overflow: hidden;
+    border-radius: 20px;
+    min-width: 300px;
+    border: solid 1px;
+    text-align: right;
+    background-color: orange;
+}
+
+.Work{ 
+
+    background-image: url("../images/icon-work.svg");
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    height: 6vh;
+}
+
+.Play{ 
+
+    background-image: url("../images/icon-play.svg");
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    height: 6vh;
+}
+
+.iconHeader{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-left: 20px;
+    height: 100px;
+    display: inline;
+    text-align: right;
+    background-color: orange;
+}
+
+.sumary{
+    
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: grey;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rigthSpot{
+    text-align: right;
+}

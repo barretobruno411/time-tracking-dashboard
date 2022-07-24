@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import PersonalReport from './components/PersonalReport';
 import './App.css';
+
+import data from './data/data.json'
+import ReportTitles from './components/ReportTitles';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PersonalReport />
+
+      {data.map(frame => (<ReportTitles title={frame.title} timeFrame={frame.timeframes.daily.current} timeFramePrev={frame.timeframes.daily.previous}/>))}
+      
+      
     </div>
   );
 }
