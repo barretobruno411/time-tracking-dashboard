@@ -3,28 +3,47 @@ import "./ReportTitle.css";
 import dots from "../images/icon-ellipsis.svg";
 
 const ReportTitles = ({ title, timeFrame, timeFramePrev }) => {
-
-    //dinamic return a className to especify css class acording with title
-    const classShow = (title) => {
-        switch (title){
-            case "Work":
-                return "Work";
-            case "Play":
-                return "Play";
-            case "Study":
-                return "Study";
-            case "Exercise":
-                return "Exercise";
-            case "Social":
-                return "Social";
-            case "Self Care":
-                return "Self Care";
-            default:
-                return "";
-        }
+  //dinamic return a className to especify css class acording with title
+  const classShow = (title) => {
+    switch (title) {
+      case "Work":
+        return "topArt Work";
+      case "Play":
+        return "topArt Play";
+      case "Study":
+        return "topArt Study";
+      case "Exercise":
+        return "topArt Exercise";
+      case "Social":
+        return "topArt Social";
+      case "Self Care":
+        return "topArt SelfCare";
+      default:
+        return "";
     }
+  };
+
+  const classColorShow = (title) => {
+    switch (title) {
+      case "Work":
+        return "reportTitles Work-color";
+      case "Play":
+        return "reportTitles Play-color";
+      case "Study":
+        return "reportTitles Study-color";
+      case "Exercise":
+        return "reportTitles Exercise-color";
+      case "Social":
+        return "reportTitles Social-color";
+      case "Self Care":
+        return "reportTitles SelfCare-color";
+      default:
+        return "";
+    }
+  };
+
   return (
-    <div className="reportTitles">
+    <div className={classColorShow(title)}>
       <div className={classShow(title)}>
         {/* <img src={Work} alt="work" className="iconHeader" /> */}
       </div>
