@@ -11,10 +11,10 @@
 
   /* ### Neutral */
 
-/* - Very dark blue: hsl(226, 43%, 10%)
-- Dark blue: hsl(235, 46%, 20%)
-- Desaturated blue: hsl(235, 45%, 61%)
-- Pale Blue: hsl(236, 100%, 87%) */
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
 }
 
 .reportTitles {
@@ -85,14 +85,23 @@
 }
 
 .sumary {
+  background-color: var(--Dark-blue);
   padding: 5px 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background-color: grey;
   width: 100%;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+}
+
+.sumary h1{
+  
+  font-weight: 400;
+}
+
+.sumary h2{
+  font-size: 18px;
 }
 
 .leftSpot {
@@ -100,5 +109,8 @@
 }
 
 .rigthSpot {
+  margin-top: 30px;
+  color: var(--Desaturated-blue);
+  font-weight: 500;
   text-align: right;
 }
