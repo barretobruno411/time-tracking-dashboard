@@ -2,7 +2,7 @@ import React from "react";
 import "./PersonalReport.css";
 import image from "../images/image-jeremy.png";
 
-const PersonalReport = () => {
+const PersonalReport = ({ChangeTimeTrack, ListMap}) => {
   return (
     <div className="personalReport">
       <div className="main">
@@ -14,9 +14,10 @@ const PersonalReport = () => {
       </div>
       <div className="timeFrames">
         <ul className="timeFramesList">
-          <li>Daily</li>
-          <li>Weekly</li>
-          <li>Montly</li>
+          {ListMap()}
+          {/* <li onClick={ChangeTimeTrack}>Daily</li>
+          <li onClick={ChangeTimeTrack}>Weekly</li>
+          <li onClick={ChangeTimeTrack}>Montly</li> */}
         </ul>
       </div>
     </div>
